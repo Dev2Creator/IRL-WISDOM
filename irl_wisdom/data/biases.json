@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Confirmation Bias",
+    "description": "The tendency to search for, interpret, favor, and recall information in a way that confirms one's preexisting beliefs or hypotheses."
+  },
+  {
+    "name": "Dunning-Kruger Effect",
+    "description": "A cognitive bias in which people with low ability at a task overestimate their ability."
+  },
+  {
+    "name": "Sunk Cost Fallacy",
+    "description": "The phenomenon whereby a person is reluctant to abandon a strategy or course of action because they have invested heavily in it."
+  },
+  {
+    "name": "Survivorship Bias",
+    "description": "The logical error of concentrating on the people or things that made it past some selection process and overlooking those that did not."
+  },
+  {
+    "name": "Anchoring Bias",
+    "description": "The tendency to rely too heavily, or 'anchor', on one trait or piece of information when making decisions."
+  },
+  {
+    "name": "Availability Heuristic",
+    "description": "A mental shortcut that relies on immediate examples that come to a given person's mind when evaluating a specific topic."
+  },
+  {
+    "name": "Fundamental Attribution Error",
+    "description": "The tendency for people to under-emphasize situational explanations for an individual's observed behavior while over-emphasizing dispositional and personality-based explanations."
+  },
+  {
+    "name": "Halo Effect",
+    "description": "The tendency for positive impressions of a person, company, brand or product in one area to positively influence one's opinion or feelings in other areas."
+  },
+  {
+    "name": "Hindsight Bias",
+    "description": "The common tendency for people to perceive past events as having been more predictable than they actually were."
+  },
+  {
+    "name": "Bandwagon Effect",
+    "description": "The tendency to do (or believe) things because many other people do (or believe) the same."
+  }
+]

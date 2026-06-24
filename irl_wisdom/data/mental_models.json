@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Inversion",
+    "description": "Approaching a situation from the opposite end. Instead of asking how to succeed, ask how to fail and avoid that."
+  },
+  {
+    "name": "First Principles Thinking",
+    "description": "Breaking down a problem into its fundamental building blocks, its basic truths, and reasoning up from there."
+  },
+  {
+    "name": "Occam's Razor",
+    "description": "The simplest explanation is usually the correct one. Don't multiply entities beyond necessity."
+  },
+  {
+    "name": "Hanlon's Razor",
+    "description": "Never attribute to malice that which is adequately explained by stupidity."
+  },
+  {
+    "name": "Pareto Principle (80/20 Rule)",
+    "description": "For many events, roughly 80% of the effects come from 20% of the causes."
+  },
+  {
+    "name": "Compounding",
+    "description": "The process in which an asset's earnings, from either capital gains or interest, are reinvested to generate additional earnings over time."
+  },
+  {
+    "name": "Opportunity Cost",
+    "description": "The loss of potential gain from other alternatives when one alternative is chosen."
+  },
+  {
+    "name": "Margin of Safety",
+    "description": "Building a buffer into your plans to accommodate for errors, unexpected events, or bad luck."
+  },
+  {
+    "name": "The Map is Not the Territory",
+    "description": "Models and abstractions are not reality. They are useful simplifications but always have limitations."
+  },
+  {
+    "name": "Second-Order Thinking",
+    "description": "Thinking past the immediate consequences of an action to consider the subsequent consequences."
+  }
+]
