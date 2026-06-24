@@ -43,7 +43,7 @@ Use the arrow keys to move, press Enter to choose, and let the stone do the rest
 | Daily wisdom | A deterministic thought for the day |
 | Mental models | Better tools for reasoning and decisions |
 | Cognitive biases | Names for the ways judgment goes sideways |
-| 48 Laws of Power | One law with its practical meaning |
+| 48 Laws of Power | One law, a plain-English explanation, and a Moai takeaway |
 | Discipline | A short push when motivation wanders off |
 | Powerful facts | Compact facts worth remembering |
 | Moai vibes | Unshakable perspective, terminal-sized |

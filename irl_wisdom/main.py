@@ -209,14 +209,40 @@ def moai(copy: bool = typer.Option(False, "--copy", "-c")):
     print_cinematic(item, title="Moai Vibes 🗿", color="white")
     handle_direct_command(item, copy)
 
+def format_power_law(item):
+    """Create a portable plain-text version for copy and favorites."""
+    return (
+        f"{item['law']}\n\n"
+        f"PLAINLY\n{item['description']}\n\n"
+        f"MOAI WAY\n{item['moai']}"
+    )
+
+
+def print_power_law(item):
+    """Render a power law as a short, friendly Moai lesson."""
+    lesson = Text()
+    lesson.append(item["law"], style=f"bold {ACCENT_BRIGHT}")
+    lesson.append("\n\nPLAINLY\n", style=f"bold {MUTED}")
+    lesson.append(item["description"], style=CREAM)
+    lesson.append("\n\n🗿 MOAI WAY\n", style=f"bold {ACCENT_BRIGHT}")
+    lesson.append(item["moai"], style=CREAM)
+    console.print(Panel(
+        lesson,
+        title=f"[{ACCENT_BRIGHT}] Power, Simplified [/{ACCENT_BRIGHT}]",
+        title_align="left",
+        border_style=BORDER,
+        box=box.SQUARE,
+        padding=(1, 2),
+    ))
+    console.print()
+
+
 @app.command()
 def power(copy: bool = typer.Option(False, "--copy", "-c")):
-    """Learn a law of power"""
+    """Learn a law in plain English, the Moai way."""
     item = get_random_item(datasets["power"])
-    text = f"{item['law']}\n\n{item['description']}"
-    copy_text = f"{item['law']}\n{item['description']}"
-    print_cinematic(text, title="48 Laws of Power", color="red")
-    handle_direct_command(copy_text, copy)
+    print_power_law(item)
+    handle_direct_command(format_power_law(item), copy)
 
 @app.command()
 def fact(copy: bool = typer.Option(False, "--copy", "-c")):
@@ -508,9 +534,8 @@ def run_interactive_menu():
         handle_copy_and_save(item, {"type": "moai", "text": item})
     elif answer == "power":
         item = get_random_item(datasets["power"])
-        text = f"{item['law']}\n\n{item['description']}"
-        copy_text = f"{item['law']}\n{item['description']}"
-        print_cinematic(text, title="48 Laws of Power", color="red")
+        copy_text = format_power_law(item)
+        print_power_law(item)
         handle_copy_and_save(copy_text, {"type": "power", "text": copy_text})
     elif answer == "models":
         item = get_random_item(datasets["mental_models"])
