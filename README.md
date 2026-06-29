@@ -80,6 +80,23 @@ For scripts and fearless stones:
 
     irl-wisdom upgrade --yes
 
+
+## The Moai rollback ritual
+
+If a new release feels wrong, roll back from the terminal:
+
+    irl-wisdom rollback
+
+Or pin a version directly:
+
+    irl-wisdom rollback 2.0.15 --yes
+
+Manual pip pinning still works too:
+
+    pip index versions irl-wisdom
+    pip install --upgrade irl-wisdom==2.0.15
+
+The rollback only changes the installed CLI package. Your local profile, streak, and favorites stay on your machine.
 ## How it works
 
     irl-wisdom
